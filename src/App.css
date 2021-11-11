@@ -1,10 +1,31 @@
 .App {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+
+*:hover{
+  transition: all 0.5s;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+.common-btn{
+  border: none;
+  min-width: 250px;
+  font-size: 16px;
+  padding:5px;
+  border-radius: 5px;
+  background: #3fa4a5;
+}
+
+.common-btn:hover{
+  background: #c95555;
+  cursor: pointer;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -28,6 +49,10 @@
   color: #61dafb;
 }
 
+li:hover, tr:hover{
+  background: darkgray;
+  cursor: pointer;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
